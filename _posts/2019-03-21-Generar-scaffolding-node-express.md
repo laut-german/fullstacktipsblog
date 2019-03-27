@@ -15,9 +15,14 @@ Ahora generamos la estructura del proyecto mediante el siguiente comando:
 
     express nombredemiapp
 
-Podemos utilizar el modificador *--view* si queremos cambiar el motor de vistas por defecto que ofrece express, normalmente suele ser *jade*. 
+La estructura de carpetas que nos quedaría es la siguiente:
 
- Si por ejemplo qusieramos cambiar el motror a pug tendriamos que escribir lo siguiente:
+![árbol de carpetas](https://i.ibb.co/pdDC9K0/tree.png)
+
+Por defecto el motor de vistas que nos ofrece express es **jade**,  si queremos cambiarlo debemos utilizar el modificador **--view**  cuando creemos
+la estructura de la aplicación.
+
+ Si qusieramos cambiar el motor a **pug** tendriamos que escribir lo siguiente:
 
     express --view=pug nombredemiapp
     
@@ -28,6 +33,6 @@ Dentro de nuestra carpeta del proyecto ahora tenemos que instalar las dependenci
   Finalmente para arrancar la aplicación en modo debug en windows  escribimos lo siguiente:
   
 
-    set DEBUG=myApp:* & npm start
+    set DEBUG=nombredemiapp:* & npm start
 
 Por defecto la aplicación se levanta en el puerto 3000 de nuestra máquina, esto podemos cambiarlo en el fichero bin/www.
