@@ -9,11 +9,11 @@ En esta entrada voy a explicar como generar de la manera mas rápida y simple la
 Lo primero que necesitamos es tener instalado Node en nuestra máquina. Podemos descargar gratuitamente
 la última versión desde su  [página oficial](https://nodejs.org/es/). Una vez instalado debemos abrir una terminal de comandos en nuestro sistema e instalar de manera global **express-generator** , escribiendo lo siguiente:
 ```
- npm install express-generator -g 
+C:\> npm install express-generator -g 
 ```
 Ahora generamos la estructura del proyecto mediante el siguiente comando:
 
-    express nombredemiapp
+    C:\> express nombredemiapp
 
 La estructura de carpetas que nos quedaría es la siguiente:
 
@@ -24,15 +24,15 @@ la estructura de la aplicación.
 
  Si qusieramos cambiar el motor a **pug** tendriamos que escribir lo siguiente:
 
-    express --view=pug nombredemiapp
+    C:\> express --view=pug nombredemiapp
     
 Dentro de nuestra carpeta del proyecto ahora tenemos que instalar las dependencias indicadas en el *package.json*  con el siguiente comando:
 
-    npm install
+    C:\> npm install
 
   Finalmente para arrancar la aplicación en modo debug en windows  escribimos lo siguiente:
   
 
-    set DEBUG=nombredemiapp:* & npm start
+    C:\> set DEBUG=nombredemiapp:* & npm start
 
 Por defecto la aplicación se levanta en el puerto 3000 de nuestra máquina, esto podemos cambiarlo en el fichero bin/www.
